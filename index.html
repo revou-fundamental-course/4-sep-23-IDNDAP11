@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator Luas & Keliling Persegi</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
+    <h1>Kalkulator Luas & Keliling Persegi</h1>
+    <section>
+      <img
+        src="D:\Dendre Aria Putra\web sederhana\SE RevoU\Mini Project\Picture\square.png"
+        alt="Deskripsi gambar"
+      />
+    </section>
+    <div class="paragraph">
+      Persegi atau bujur sangkar adalah bangun datar dua dimensi yang dibentuk
+      oleh empat buah rusuk yang sama panjang dan memiliki empat buah sudut yang
+      kesemuanya adalah sudut siku-siku. Persegi merupakan turunan dari segi
+      empat yang mempunyai ciri khusus keempat sisinya sama panjang dan keempat
+      sudutnya siku-siku (90°).
+    </div>
+    <section class="calculator-section">
+      <!-- Hitung Luas Persegi -->
+      <h2>Hitung Luas Persegi</h2>
+      <p>Menggunakan rumus: Luas = Sisi x Sisi</p>
+      <form id="square-area-form">
+        <label for="sisi">Panjang Sisi:</label>
+        <input type="number" id="luas-sisi" name="sisi" required />
+        <button type="button" id="luas-calculate-button">Hitung Luas</button>
+      </form>
+
+      <div id="luas-result-container">
+        <p>Hasil:</p>
+        <p id="luas-result"></p>
+      </div>
+
+      <!-- Hitung Keliling Persegi -->
+      <h2>Hitung Keliling Persegi</h2>
+      <p>Menggunakan rumus: Keliling = 4 x Sisi</p>
+      <form id="square-perimeter-form">
+        <label for="sisi">Panjang Sisi:</label>
+        <input type="number" id="keliling-sisi" name="sisi" required />
+        <button type="button" id="keliling-calculate-button">
+          Hitung Keliling
+        </button>
+        <button type="button" id="restart-button">Reset All</button>
+      </form>
+
+      <div id="keliling-result-container">
+        <p>Hasil:</p>
+        <p id="keliling-result"></p>
+      </div>
+    </section>
+
+    <script src="JS/Scirpt.js"></script>
+  </body>
+</html>
